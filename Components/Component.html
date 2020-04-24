@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../js/vue.js"></script>
+</head>
+<body>
+	<div id="component">
+		<vikas></vikas>
+
+    </div>	
+
+
+
+ <script type="text/javascript">
+
+ 	Vue.component("vikas",{
+ 		template: '<h1>hello word {{name}}</h1>',
+
+ 		data(){
+ 			return {name:"vikas"}
+ 		}
+
+ 	})
+ 	var app = new Vue({}).$mount('#component');
+ 	
+
+
+ </script>   	
+
+</body>
+</html>

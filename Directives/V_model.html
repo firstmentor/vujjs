@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id=app>
+		<!-- <input type="text" v-model="message"> -->
+		<input type="text" v-model.number.lazy="message1">
+		<input type="text" v-model.number.lazy="message2">
+		<!-- <p>{{ message }}</p> -->
+		<p>{{ message1+message2 }}</p>
+			
+		
+	</div>
+		
+<script src="../vue.js"></script>
+<script>
+var app =new Vue({
+		el:"#app",
+		data:{
+			message :"vikas jain",
+			message1: "",
+			message2: "",
+		}
+
+
+	});
+	
+
+
+
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id=app>
+		<input id ="txt" type="text" v-on:Keyup.enter="addElement">
+
+		<ul>
+			<li v-for="city in cities" v-bind:id="city"> {{ city }}</li> <!--title,id-->
+			<li v-for="city in cities" v-bind:id="key"> {{ city }}</li> <!--title,id-->
+			
+	    </ul>		
+		
+			
+		
+	</div>
+<script src="../vue.js"></script>
+<script>
+
+var app = new Vue({
+		el:"#app",
+		data:{
+			
+			cities:["gwalior","bhind","etawah","delhi"]  //array
+
+		     },
+		methods: {
+			addElement: function(){
+				var name = document.getElementById("txt").value;
+				this.cities.push(name);
+
+			}
+
+
+		}
+
+
+	});
+	
+
+
+
+</script>	
+
+</body>
+</html>

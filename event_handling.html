@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/vue.js"></script>
+</head>
+<body>
+	<div id=app>
+		<h3>Counter: {{ counter}}</h3>
+		<button type="button" @click="increment(1)">Increment by 1</button>
+		<button type="button" v-on:click="increment(1)">Increment by 1</button>
+		<button type="button" v-on:click="decrement(2)">Decrement by 1</button>
+
+		<button type="button" v-on:dblclick="increment(10)">Increment by 5</button>
+		<button type="button" v-on:dblclick="decrement(5)">Decrement by 5</button>
+		
+		
+	</div>
+
+<script src="js/event.js"></script>	
+
+</body>
+</html>

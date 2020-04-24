@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../js/vue.js"></script>
+</head>
+<body>
+	<div id=app>
+		<ul>
+			<li v-for="student in students">{{ student }}</li>
+		</ul>
+		<ul>
+			<li v-for="teacher in teachers">{{ teacher.name }} - {{teacher.subject}}</li>
+		</ul>	
+		
+		
+		
+	</div>
+
+<script>
+	new Vue({
+		el:"#app",
+		data:{
+			students:["vikas","mahesh","rahul","raj"],
+			teachers:[
+			 {name:"teacher 1",subject: "Subject 1"},
+			 {name:"teacher 2",subject: "Subject 2"},
+			 {name:"teacher 3",subject: "Subject 3"},
+			 {name:"teacher 4",subject: "Subject 4"},
+			]
+			
+			
+		},
+		methods: {
+			
+
+		}
+
+
+	});
+	</script>	
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id=app>
+		<p>{{ message }}</p>
+		<p v-text="var1"></p>
+		<p v-html="var2"></p>
+		<div>My name is {{var1}} and I have in {{city}}</div>
+		
+	</div>
+<script src="../vue.js"></script>
+<script>
+	new Vue({
+		el:"#app",
+		data:{
+			message: "Hello pninfosys",
+			var1: "vikas jain",
+			var2:"<h2>pninfosys</h2>",
+			city: "gwalior"
+		}
+
+
+	});
+	
+
+
+
+</script>	
+
+</body>
+</html>

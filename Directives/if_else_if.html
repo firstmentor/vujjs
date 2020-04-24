@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id=app>
+		<div v-if="show ==1">
+		<h2>Hello from vue js 1</h2>
+		<p>The contents of the span will be replaced with the value of the rawHtml property, interpreted as plain HTML</p>
+	    </div>
+
+	    <div v-else-if= "show ==2">
+		<h2>Hello from vue js 2</h2>
+		<p>data bindings are ignored. Note that you cannot use v-html to compose template partials, because Vue is not a string-based templating engine.</p>
+	    </div>
+
+	    <div v-else-if="show ==3">
+		<h2>Hello from vue js 3</h2>
+		<p>data bindings are ignored. Note that you cannot use v-html to compose template partials, because Vue is not a string-based templating engine. Instead, components are preferred as the fundamental unit for UI reuse and composition.</p>
+	    </div>
+
+	    <div  v-else-if="show ==4">
+		<h2>Hello from vue js 4</h2>
+		<p>Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to XSS vulnerabilities. Only use HTML interpolation on trusted content and never on user-provided content.</p>
+	    </div>
+    <h2 v-else>Unknow Condition</h2>
+    <p v-if="true"> This is my if statement</p>
+		<p v-else>This is my else statment</p>
+
+    
+			
+		
+	</div>
+<script src="../js/vue.js"></script>
+<script>
+	new Vue({
+		el:"#app",
+		data:{
+			show :4 , //false
+			isActive : true
+		}
+
+
+	});
+	
+
+
+
+</script>	
+
+</body>
+</html>

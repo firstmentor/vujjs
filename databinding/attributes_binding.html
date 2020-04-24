@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../js/vue.js"></script>
+	<style>
+		.fixImageSize{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id=app>
+		
+		<a v-bind:href="ulink" v-bind:title= "title">{{name}}</a><br>
+		<img v-bind:src="image" v-bind:class="{fixImageSize:isActive}">
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	var myview = new Vue({
+		el:"#app",
+		data:{
+			name:"pninfosy",
+			title:"This is channel link",
+			image:"../image/3.png",
+			isActive:true,
+			ulink:"https://vuejs.org/v2/guide/installation.html",
+		}
+
+
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id=app>
+
+		<ul>
+			<!-- <li v-for="city in cities"> {{ city }}</li> --> 
+			<!-- <li v-for="city in cities"> {{ city.name }}</li> -->
+			<li v-for="n in count"> {{ n }}</li>
+			<li v-for="n in country"> {{ n }}</li>
+	    </ul>		
+		
+			
+		
+	</div> 
+<script src="../vue.js"></script>
+<script>
+
+var app = new Vue({
+		el:"#app",
+		data:{
+			
+			// cities:["gwalior","bhind","etawah","delhi"]  //array
+
+			// cities:[   
+			//    {name : "gwalior"}, //object
+			//    {name : "bhind"},
+			//    {name : "etawah"},
+			//    {name : "delhi"},
+
+
+			// ]
+
+			//count :3  //count
+
+			country : "gwalior"  //string
+
+
+		},
+		methods: {
+
+		}
+
+
+	});
+	
+
+
+
+</script>	
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../js/vue.js"></script>
+	
+</head>
+<body>
+	<div id=app>
+		
+		<form>
+			<!-- <input type="text" name=""  :value="txtname" placeholder="name"> -->
+			<input type="text" name=""  v-bind:value="txtname" placeholder="name">
+			<input type="text" name=""  v-bind:value="txtEmail" placeholder="Email">
+			<button type="button" name="button">Submit</button>
+			
+
+
+
+		</form>
+		<div v-html="htmlContent"></div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+	var myview = new Vue({
+		el:"#app",
+		data:{
+			txtname: "vikas jain",
+			txtEmail: "jain@gmail.com",
+			htmlContent : "<p>This is my paragraph set from js file</p>"
+		}
+
+
+	});
+</script>
+</body>
+</html>
